@@ -49,7 +49,7 @@ function M.start()
 
   local marp_start_command = "PORT=" .. port .. " marp --html --server" .. vim.fn.getcwd()
 
-  util.log_info("starting server on http://localhost:" .. port)
+  util.log_info("starting server with html on http://localhost:" .. port)
 
   M.jobid = vim.fn.jobstart(marp_start_command, {
     on_exit = function(_, exit_code, _)
