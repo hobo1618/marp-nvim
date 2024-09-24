@@ -47,7 +47,7 @@ function M.start()
   local wait_for_response_timeout = config.options.wait_for_response_timeout
   local wait_for_response_delay = config.options.wait_for_response_delay
 
-  local marp_start_command = "PORT=" .. port .. " marp --server" .. vim.fn.getcwd()
+  local marp_start_command = "PORT=" .. port .. " marp --server --html" .. vim.fn.getcwd()
 
   util.log_info("starting server on http://localhost:" .. port)
 
